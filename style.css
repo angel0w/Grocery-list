@@ -1,22 +1,18 @@
 body {
-    background: linear-gradient(45deg, #9c27b0, #31d5eb);
+    /* background: linear-gradient(45deg, #9c27b0, #31d5eb); */
 }
-.container {
-    /* background-color: white; */
-    /* display: flex;
+#section {
+background-color: blue;
+}
+
+#container {
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; */
-    margin: auto;
-}
-
-#items {
+    flex-direction: column;
 
 }
 
-#ulList {
-
-}
-li {
-    cursor: pointer;
+#clearButton {
+    background-color: aqua;
 }
