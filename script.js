@@ -19,6 +19,10 @@ function addItem(ev) {
     span.addEventListener('click', (e) => {
         e.target.parentElement.remove();
     });
+
+    p.addEventListener('click', (e) => {
+        p.style.textDecoration = p.style.textDecoration === "line-through" ? "none" : "line-through";
+    })
 }
 
 let clearBtn = document.getElementById('clearButton');
@@ -26,21 +30,5 @@ clearBtn.addEventListener('click', (e) => {
     let lists = document.querySelectorAll('li');
     lists.forEach((el) => {
         el.remove();
-    });
-});
-
-
-
-
-let pElement = Array.from(document.querySelectorAll('#ulList'));
-pElement.forEach((el) => {
-    el.addEventListener('click', (e) => {
-
-
-        if (e.target.children[0].style.textDecoration == 'line-through') {
-            e.target.children[0].style.textDecoration = 'none';
-        } else {
-            e.target.children[0].style.textDecoration = 'line-through';
-        }
     });
 });
