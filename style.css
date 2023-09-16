@@ -31,7 +31,8 @@ li {
 }
 
 li,
-input[type='text'], input[type='button'] {
+input[type='text'],
+input[type='button'] {
     margin: 10px;
     padding: 10px 20px;
     background-color: #ffdac1;
