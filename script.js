@@ -1,7 +1,7 @@
 function addItem(ev) {
     let ulItems = document.getElementById('ulList');
     let liItem = document.getElementById('inputValue').value;
-    
+
     let li = document.createElement('li');
     let p = document.createElement('p');
     let span = document.createElement('span');
@@ -24,10 +24,7 @@ function addItem(ev) {
         p.style.textDecoration =
             p.style.textDecoration === 'line-through' ? 'none' : 'line-through';
     });
-
-
 }
-
 
 function handleKeyPress(event) {
     if (event.key === 'Enter') {
